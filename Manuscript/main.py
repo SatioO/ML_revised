@@ -41,27 +41,30 @@ def process_stories(args, package):
             alignment = paragraphStyleRange.attrib.get("Justification")
             alignment = get_alignment(alignment)
             paragraghStyle = "<p style='" + alignment + ";'>"
+            characterStyle = ""
 
-            characterStyleRanges = paragraphStyleRange.iter(
-                "CharacterStyleRange")
-
-            characterStyle = "<span style='"
-            for characterStyleRange in characterStyleRanges:
-                # Get the font style and append it to character style
+            for characterStyleRange in paragraphStyleRange.iter(
+                    "CharacterStyleRange"):
+                # Get the font style
                 fontStyle = characterStyleRange.attrib.get("FontStyle")
                 fontStyle = get_font_weight(fontStyle)
-                characterStyle += fontStyle + ";"
 
-                # Get the font size and append it to character style
+                # Get the font size
                 fontSize = characterStyleRange.attrib.get("PointSize")
                 fontSize = get_font_size(fontSize)
-                characterStyle += fontSize + ";"
 
-                # Close the character style
-                characterStyle += "'></span>"
+                for child in characterStyleRange.iter():
+                    if child.tag == "Content":
+                        characterStyle += "<span style='" + fontStyle + ";"
+                        characterStyle += fontSize + ";" if fontSize else ""
+                        characterStyle += "'>" + child.text if child.text else "'>"
+                        characterStyle += "</span>"
 
-                # Append character style to paragraph style
-                paragraghStyle += characterStyle
+                    if child.tag == "Br":
+                        characterStyle += "<br />"
+
+            # Append character style to paragraph style
+            paragraghStyle += characterStyle
 
             # Close the paragraph style
             paragraghStyle += "</p>"
