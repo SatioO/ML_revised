@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 
 
 def get_alignment(args):
+    # Function to get text alignment : defaults to left
     switcher = {
         "CenterAlign": "text-align: center",
         "RightAlign": "text-align: right",
@@ -16,6 +17,7 @@ def get_alignment(args):
 
 
 def get_font_weight(args):
+    # Function to get font weight : defaults to normal
     switcher = {
         "Bold": "font-weight: bold",
         "Italics": "font-weight: italics",
@@ -26,7 +28,8 @@ def get_font_weight(args):
 
 
 def get_font_size(args):
-    return "font-size: " + args + "pt" if args else "font-size: 8pt"
+    # Function to get font size : defaults to 12
+    return "font-size: " + args + "pt" if args else "font-size: 12pt"
 
 
 def process_stories(args, package):
@@ -41,10 +44,11 @@ def process_stories(args, package):
             alignment = paragraphStyleRange.attrib.get("Justification")
             alignment = get_alignment(alignment)
             paragraghStyle = "<p style='" + alignment + ";'>"
-            characterStyle = ""
 
             for characterStyleRange in paragraphStyleRange.iter(
                     "CharacterStyleRange"):
+
+                characterStyle = ""
                 # Get the font style
                 fontStyle = characterStyleRange.attrib.get("FontStyle")
                 fontStyle = get_font_weight(fontStyle)
@@ -63,8 +67,8 @@ def process_stories(args, package):
                     if child.tag == "Br":
                         characterStyle += "<br />"
 
-            # Append character style to paragraph style
-            paragraghStyle += characterStyle
+                # Append character style to paragraph style
+                paragraghStyle += characterStyle
 
             # Close the paragraph style
             paragraghStyle += "</p>"
