@@ -36,6 +36,11 @@ def process_stories(args, package):
                 fontColor = characterStyleRange.attrib.get("FillColor")
                 fontColor = commons.get_color(fontColor, package, args)
 
+                # Get the storke color
+                strokeColor = characterStyleRange.attrib.get("StrokeColor")
+                strokeColor = commons.get_stroke_color(
+                    strokeColor, package, args)
+
                 # Get the Underline style
                 underline = characterStyleRange.attrib.get("Underline")
                 underline = commons.get_text_decoration(underline)
@@ -63,6 +68,7 @@ def process_stories(args, package):
                     if child.tag == "Content":
                         characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
                         characterStyle += fontColor + ";" if fontColor else ""
+                        characterStyle += strokeColor + ";" if strokeColor else ""
                         characterStyle += underline + ";" if underline else ""
                         characterStyle += strikeThrough + ";" if strikeThrough else ""
                         characterStyle += fontFamily + ";" if fontFamily else ""

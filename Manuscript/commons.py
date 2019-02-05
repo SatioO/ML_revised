@@ -54,6 +54,21 @@ def get_color(color, package, args):
     return "color:" + currentColor
 
 
+def get_stroke_color(color, package, args):
+    tree = ET.parse(
+        args.extract + package.graphic.name)
+
+    currentColor = None
+
+    for i in tree.getroot().iter("Color"):
+        if i.attrib["Self"] == color:
+            colorValue = i.attrib["ColorValue"].split(" ")
+            currentColor = "rgb" + str(decode_color.cmyk_to_rgb(
+                float(colorValue[0]), float(colorValue[1]), float(colorValue[2]), float(colorValue[3])))
+
+    return "-webkit-text-stroke: 2px " + currentColor if currentColor else None
+
+
 def get_text_decoration(args):
     return "text-decoration: underline" if args else None
 
