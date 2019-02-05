@@ -12,80 +12,107 @@ def process_stories(args, package):
         root = tree.getroot()
 
         htmlContent = ""
-        paragraphStyleRanges = root.iter("ParagraphStyleRange")
 
-        for paragraphStyleRange in paragraphStyleRanges:
+        for paragraphStyleRange in root.iter("ParagraphStyleRange"):
+            # Get the text alignment
             alignment = paragraphStyleRange.attrib.get("Justification")
             alignment = commons.get_alignment(alignment)
-            paragraghStyle = "<p style='" + alignment + ";'>"
 
-            for characterStyleRange in paragraphStyleRange.iter(
-                    "CharacterStyleRange"):
+            listItemParagraph = paragraphStyleRange.attrib.get(
+                "BulletsAndNumberingListType")
 
-                characterStyle = ""
+            if listItemParagraph:
+                if listItemParagraph == "BulletList":
+                    listStyle = "<p style='" + alignment + ";'><ul>"
+                else:
+                    listStyle = "<p style='" + alignment + ";'><ol>"
 
-                # Get the font style
-                fontStyle = characterStyleRange.attrib.get("FontStyle")
-                fontStyle = commons.get_font_weight(fontStyle)
+                for characterStyleRange in paragraphStyleRange.iter(
+                        "CharacterStyleRange"):
+                    for child in characterStyleRange.iter():
+                        if child.tag == "Content":
+                            listStyle += "<li>" + child.text + "</li>"
 
-                # Get the font size
-                fontSize = characterStyleRange.attrib.get("PointSize")
-                fontSize = commons.get_font_size(fontSize)
+                        if child.tag == "Br":
+                            listStyle += "<br />"
 
-                # Get the font color
-                fontColor = characterStyleRange.attrib.get("FillColor")
-                fontColor = commons.get_color(fontColor, package, args)
+                if listItemParagraph == "BulletList":
+                    listStyle += "</ul></p>"
+                else:
+                    listStyle += "</ol></p>"
+                htmlContent += listStyle
 
-                # Get the storke color
-                strokeColor = characterStyleRange.attrib.get("StrokeColor")
-                strokeColor = commons.get_stroke_color(
-                    strokeColor, package, args)
+            else:
+                paragraghStyle = "<p style='" + alignment + ";'>"
 
-                # Get the Underline style
-                underline = characterStyleRange.attrib.get("Underline")
-                underline = commons.get_text_decoration(underline)
+                for characterStyleRange in paragraphStyleRange.iter(
+                        "CharacterStyleRange"):
 
-                # Get the StrikeThrough style
-                strikeThrough = characterStyleRange.attrib.get("StrikeThru")
-                strikeThrough = commons.get_strike_through(strikeThrough)
+                    characterStyle = ""
 
-                # Get the font family
-                fontFamily = commons.get_font_family(None)
-                # Get the line height
-                lineHeight = commons.get_line_height(None)
+                    # Get the font style
+                    fontStyle = characterStyleRange.attrib.get("FontStyle")
+                    fontStyle = commons.get_font_weight(fontStyle)
 
-                for child in characterStyleRange.iter():
-                    if child.tag == "Properties":
-                        for properties in child.iter():
-                            if properties.tag == "Leading":
-                                lineHeight = commons.get_line_height(
-                                    properties.text)
+                    # Get the font size
+                    fontSize = characterStyleRange.attrib.get("PointSize")
+                    fontSize = commons.get_font_size(fontSize)
 
-                            if properties.tag == "AppliedFont":
-                                fontFamily = commons.get_font_family(
-                                    properties.text)
+                    # Get the font color
+                    fontColor = characterStyleRange.attrib.get("FillColor")
+                    fontColor = commons.get_color(fontColor, package, args)
 
-                    if child.tag == "Content":
-                        characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
-                        characterStyle += fontColor + ";" if fontColor else ""
-                        characterStyle += strokeColor + ";" if strokeColor else ""
-                        characterStyle += underline + ";" if underline else ""
-                        characterStyle += strikeThrough + ";" if strikeThrough else ""
-                        characterStyle += fontFamily + ";" if fontFamily else ""
-                        characterStyle += lineHeight + ";" if lineHeight else ""
-                        characterStyle += fontSize + ";" if fontSize else ""
-                        characterStyle += "'>" + child.text if child.text else "'>"
-                        characterStyle += "</span>"
+                    # Get the storke color
+                    strokeColor = characterStyleRange.attrib.get("StrokeColor")
+                    strokeColor = commons.get_stroke_color(
+                        strokeColor, package, args)
 
-                    if child.tag == "Br":
-                        characterStyle += "<br />"
+                    # Get the Underline style
+                    underline = characterStyleRange.attrib.get("Underline")
+                    underline = commons.get_text_decoration(underline)
 
-                # Append character style to paragraph style
-                paragraghStyle += characterStyle
+                    # Get the StrikeThrough style
+                    strikeThrough = characterStyleRange.attrib.get(
+                        "StrikeThru")
+                    strikeThrough = commons.get_strike_through(strikeThrough)
 
-            # Close the paragraph style
-            paragraghStyle += "</p>"
-            htmlContent += paragraghStyle
+                    # Get the font family
+                    fontFamily = commons.get_font_family(None)
+                    # Get the line height
+                    lineHeight = commons.get_line_height(None)
+
+                    for child in characterStyleRange.iter():
+                        if child.tag == "Properties":
+                            for properties in child.iter():
+                                if properties.tag == "Leading":
+                                    lineHeight = commons.get_line_height(
+                                        properties.text)
+
+                                if properties.tag == "AppliedFont":
+                                    fontFamily = commons.get_font_family(
+                                        properties.text)
+
+                        if child.tag == "Content":
+                            characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
+                            characterStyle += fontColor + ";" if fontColor else ""
+                            characterStyle += strokeColor + ";" if strokeColor else ""
+                            characterStyle += underline + ";" if underline else ""
+                            characterStyle += strikeThrough + ";" if strikeThrough else ""
+                            characterStyle += fontFamily + ";" if fontFamily else ""
+                            characterStyle += lineHeight + ";" if lineHeight else ""
+                            characterStyle += fontSize + ";" if fontSize else ""
+                            characterStyle += "'>" + child.text if child.text else "'>"
+                            characterStyle += "</span>"
+
+                        if child.tag == "Br":
+                            characterStyle += "<br />"
+
+                    # Append character style to paragraph style
+                    paragraghStyle += characterStyle
+
+                # Close the paragraph style
+                paragraghStyle += "</p>"
+                htmlContent += paragraghStyle
 
         file = open(args.extract + "text.html", "w")
         file.write(htmlContent)

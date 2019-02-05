@@ -25,15 +25,15 @@
 				</Properties>
 			</GridDataInformation>
 		</Page>
-		<TextFrame Self="u114" ParentStory="u102" PreviousTextFrame="n" NextTextFrame="u119" ContentType="TextType" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc5" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 249.44881889760003 0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+		<TextFrame Self="u114" ParentStory="u101" PreviousTextFrame="n" NextTextFrame="u158" ContentType="TextType" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc5" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 111 -243.33070866180003" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 			<Properties>
 				<PathGeometry>
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
-							<PathPointType Anchor="-213.44881889760003 -318.33070866180003" LeftDirection="-213.44881889760003 -318.33070866180003" RightDirection="-213.44881889760003 -318.33070866180003" />
-							<PathPointType Anchor="-213.44881889760003 318.33070866180003" LeftDirection="-213.44881889760003 318.33070866180003" RightDirection="-213.44881889760003 318.33070866180003" />
-							<PathPointType Anchor="213.44881889760003 318.33070866180003" LeftDirection="213.44881889760003 318.33070866180003" RightDirection="213.44881889760003 318.33070866180003" />
-							<PathPointType Anchor="213.44881889760003 -318.33070866180003" LeftDirection="213.44881889760003 -318.33070866180003" RightDirection="213.44881889760003 -318.33070866180003" />
+							<PathPointType Anchor="-75 -75" LeftDirection="-75 -75" RightDirection="-75 -75" />
+							<PathPointType Anchor="-74.82542003007467 561.6614173236001" LeftDirection="-74.82542003007467 561.6614173236001" RightDirection="-74.82542003007467 561.6614173236001" />
+							<PathPointType Anchor="352.0722177651254 561.5846510192522" LeftDirection="352.0722177651254 561.5846510192522" RightDirection="352.0722177651254 561.5846510192522" />
+							<PathPointType Anchor="351.89763779520007 -75.07676630434787" LeftDirection="351.89763779520007 -75.07676630434787" RightDirection="351.89763779520007 -75.07676630434787" />
 						</PathPointArray>
 					</GeometryPathType>
 				</PathGeometry>
@@ -44,14 +44,9 @@
 					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
 				</Properties>
 			</ObjectExportOption>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="426.89763779520007" TextColumnMaxWidth="0">
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="427.0722177651254" TextColumnMaxWidth="0">
 				<Properties>
-					<InsetSpacing type="list">
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-						<ListItem type="unit">0</ListItem>
-					</InsetSpacing>
+					<InsetSpacing type="unit">0</InsetSpacing>
 				</Properties>
 			</TextFramePreference>
 			<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
