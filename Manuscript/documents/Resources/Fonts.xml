@@ -12,16 +12,6 @@
 	<FontFamily Self="dia4" Name="Kozuka Mincho Pr6N">
 		<Font Self="dia4FontnKozuka Mincho Pr6N R" FontFamily="Kozuka Mincho Pr6N" Name="Kozuka Mincho Pr6N R" PostScriptName="KozMinPr6N-Regular" Status="Installed" FontStyleName="R" FontType="OpenTypeCID" WritingScript="1" FullName="Kozuka Mincho Pr6N R" FullNameNative="小塚明朝 Pr6N R" FontStyleNameNative="R" PlatformName="$ID/" Version="Version 6.017;PS 6.004;hotconv 1.0.70;makeotf.lib2.5.5900" TypekitID="$ID/" />
 	</FontFamily>
-	<FontFamily Self="di14e" Name="Arial">
-		<Font Self="di14eFontnArial Regular" FontFamily="Arial" Name="Arial Regular" PostScriptName="ArialMT" Status="Installed" FontStyleName="Regular" FontType="OpenTypeTT" WritingScript="0" FullName="Arial" FullNameNative="Arial" FontStyleNameNative="Regular" PlatformName="$ID/" Version="Version 5.01.2x" TypekitID="$ID/" />
-		<Font Self="di14eFontnArial Italic" FontFamily="Arial" Name="Arial Italic" PostScriptName="Arial-ItalicMT" Status="Installed" FontStyleName="Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Italic" FullNameNative="Arial Italic" FontStyleNameNative="Italic" PlatformName="$ID/" Version="Version 5.00.2x" TypekitID="$ID/" />
-		<Font Self="di14eFontnArial Bold" FontFamily="Arial" Name="Arial Bold" PostScriptName="Arial-BoldMT" Status="Installed" FontStyleName="Bold" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Bold" FullNameNative="Arial Bold" FontStyleNameNative="Bold" PlatformName="$ID/" Version="Version 5.01.2x" TypekitID="$ID/" />
-		<Font Self="di14eFontnArial Bold Italic" FontFamily="Arial" Name="Arial Bold Italic" PostScriptName="Arial-BoldItalicMT" Status="Installed" FontStyleName="Bold Italic" FontType="OpenTypeTT" WritingScript="0" FullName="Arial Bold Italic" FullNameNative="Arial Bold Italic" FontStyleNameNative="Bold Italic" PlatformName="$ID/" Version="Version 5.00.2x" TypekitID="$ID/" />
-	</FontFamily>
-	<FontFamily Self="di153" Name="Kefa">
-		<Font Self="di153FontnKefa Regular" FontFamily="Kefa" Name="Kefa Regular" PostScriptName="Kefa-Regular" Status="Installed" FontStyleName="Regular" FontType="TrueType" WritingScript="0" FullName="Kefa Regular" FullNameNative="Kefa Regular" FontStyleNameNative="Regular" PlatformName="$ID/" Version="13.0d1e3" TypekitID="$ID/" />
-		<Font Self="di153FontnKefa Bold" FontFamily="Kefa" Name="Kefa Bold" PostScriptName="Kefa-Bold" Status="Installed" FontStyleName="Bold" FontType="TrueType" WritingScript="0" FullName="Kefa Bold" FullNameNative="Kefa Bold" FontStyleNameNative="Bold" PlatformName="$ID/" Version="13.0d1e3" TypekitID="$ID/" />
-	</FontFamily>
 	<CompositeFont Self="CompositeFont/$ID/[No composite font]" Name="$ID/[No composite font]">
 		<CompositeFontEntry Self="ua3" Name="$ID/Kanji" FontStyle="$ID/R" RelativeSize="100" HorizontalScale="100" VerticalScale="100" Locked="true" ScaleOption="true" BaselineShift="0">
 			<Properties>

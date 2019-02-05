@@ -36,6 +36,14 @@ def process_stories(args, package):
                 fontColor = characterStyleRange.attrib.get("FillColor")
                 fontColor = commons.get_color(fontColor, package, args)
 
+                # Get the Underline style
+                underline = characterStyleRange.attrib.get("Underline")
+                underline = commons.get_text_decoration(underline)
+
+                # Get the StrikeThrough style
+                strikeThrough = characterStyleRange.attrib.get("StrikeThru")
+                strikeThrough = commons.get_strike_through(strikeThrough)
+
                 # Get the font family
                 fontFamily = commons.get_font_family(None)
                 # Get the line height
@@ -55,6 +63,8 @@ def process_stories(args, package):
                     if child.tag == "Content":
                         characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
                         characterStyle += fontColor + ";" if fontColor else ""
+                        characterStyle += underline + ";" if underline else ""
+                        characterStyle += strikeThrough + ";" if strikeThrough else ""
                         characterStyle += fontFamily + ";" if fontFamily else ""
                         characterStyle += lineHeight + ";" if lineHeight else ""
                         characterStyle += fontSize + ";" if fontSize else ""

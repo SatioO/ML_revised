@@ -52,3 +52,11 @@ def get_color(color, package, args):
                 float(colorValue[0]), float(colorValue[1]), float(colorValue[2]), float(colorValue[3])))
 
     return "color:" + currentColor
+
+
+def get_text_decoration(args):
+    return "text-decoration: underline" if args else None
+
+
+def get_strike_through(args):
+    return "text-decoration: line-through" if args else None

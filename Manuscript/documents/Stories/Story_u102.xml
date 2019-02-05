@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0">
+	<Story Self="u102" UserText="true" IsEndnoteStory="false" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Flutter widgets are built using a modern react-style framework, which takes inspiration from React. The central idea is that you build your UI out of widgets. </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" Underline="true">
+				<Content>Widgets describe what their view should look like given their current configuration and state. </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>When a widget’s state changes, the widget rebuilds its description, which the framework diffs against the previous description in order to determine the minimal changes needed in the underlying render tree to transition from one state to the next.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Content>Note: If you would like to become better acquainted with Flutter by diving into some code, check out Building Layouts in Flutter and Adding Interactivity to Your Flutter App.</Content>
+				<Br />
+				<Br />
+				<Content>Hello World</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" StrikeThru="true">
+				<Content>The minimal Flutter app simply calls the runApp() function with a widget:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Br />
+				<Content>content_copy</Content>
+				<Br />
+				<Content>import ‘package:flutter/material.dart’;</Content>
+				<Br />
+				<Br />
+				<Content>void main() {</Content>
+				<Br />
+				<Content>  runApp(</Content>
+				<Br />
+				<Content>    Center(</Content>
+				<Br />
+				<Content>      child: Text(</Content>
+				<Br />
+				<Content>        ‘Hello, world!’,</Content>
+				<Br />
+				<Content>        textDirection: TextDirection.ltr,</Content>
+				<Br />
+				<Content>      ),</Content>
+				<Br />
+				<Content>    ),</Content>
+				<Br />
+				<Content>  );</Content>
+				<Br />
+				<Content>}</Content>
+				<Br />
+				<Content>The runApp() function takes the given Widget and makes it the root of the widget tree. In this example, the widget tree consists of two widgets, the Center widget and its child, the Text widget. The framework forces the root widget to cover the screen, which means the text “Hello, world” ends up centered on screen. The text direction needs to be specified in this instance; when the MaterialApp widget is used, this is taken care of for you, as demonstrated later.</Content>
+				<Br />
+				<Br />
+				<Content>When writing an app, you’ll commonly author new widgets that are subclasses of either StatelessWidget or StatefulWidget, depending on whether your widget manages any state. A widget’s main job is to implement a build function, which describes the widget in terms of other, lower-level widgets. The framework builds those widgets in turn until the process bottoms out in widgets that represent the underlying RenderObject, which computes and describes the geometry of the widget.</Content>
+				<Br />
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Flutter widgets are built using a modern react-style framework, which takes inspiration from React. The central idea is that you build your UI out of widgets. Widgets describe what their view should look like given their current configuration and state. When a widget’s state changes, the widget rebuilds its description, which the framework diffs against the previous description in order to determine the minimal changes needed in the underlying render tree to transition from one state to the next.</Content>
+				<Br />
+				<Br />
+				<Content>Note: If you would like to become better acquainted with Flutter by diving into some code, check out Building Layouts in Flutter and Adding Interactivity to Your Flutter App.</Content>
+				<Br />
+				<Br />
+				<Content>Hello World</Content>
+				<Br />
+				<Content>The minimal Flutter app simply calls the runApp() function with a widget:</Content>
+				<Br />
+				<Br />
+				<Content>content_copy</Content>
+				<Br />
+				<Content>import ‘package:flutter/material.dart’;</Content>
+				<Br />
+				<Br />
+				<Content>void main() {</Content>
+				<Br />
+				<Content>  runApp(</Content>
+				<Br />
+				<Content>    Center(</Content>
+				<Br />
+				<Content>      child: Text(</Content>
+				<Br />
+				<Content>        ‘Hello, world!’,</Content>
+				<Br />
+				<Content>        textDirection: TextDirection.ltr,</Content>
+				<Br />
+				<Content>      ),</Content>
+				<Br />
+				<Content>    ),</Content>
+				<Br />
+				<Content>  );</Content>
+				<Br />
+				<Content>}</Content>
+				<Br />
+				<Content>The runApp() function takes the given Widget and makes it the root of the widget tree. In this example, the widget tree consists of two widgets, the Center widget and its child, the Text widget. The framework forces the root widget to cover the screen, which means the text “Hello, world” ends up centered on screen. The text direction needs to be specified in this instance; when the MaterialApp widget is used, this is taken care of for you, as demonstrated later.</Content>
+				<Br />
+				<Br />
+				<Content>When writing an app, you’ll commonly author new widgets that are subclasses of either StatelessWidget or StatefulWidget, depending on whether your widget manages any state. A widget’s main job is to implement a build function, which describes the widget in terms of other, lower-level widgets. The framework builds those widgets in turn until the process bottoms out in widgets that represent the underlying RenderObject, which computes and describes the geometry of the widget.</Content>
+				<Br />
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>
