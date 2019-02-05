@@ -21,6 +21,7 @@
 			</CharacterStyleRange>
 			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
 				<Properties>
+					<Leading type="unit">24</Leading>
 					<AppliedFont type="string">Kefa</AppliedFont>
 				</Properties>
 				<Content>Flutter widgets are built using a modern react-style framework, which takes inspiration from React. The central idea is that you build your UI out of widgets. Widgets describe what their view should look like given their current configuration and state. When a widget’s state changes, the widget rebuilds its description, which the framework diffs against the previous description in order to determine the minimal changes needed in the underlying render tree to transition from one state to the next.</Content>

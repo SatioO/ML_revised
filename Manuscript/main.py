@@ -29,12 +29,18 @@ def get_font_weight(args):
 
 
 def get_font_size(args):
-    # Function to get font size : defaults to 12
+    # Function to get font size : defaults to 12pt
     return "font-size: " + args + "pt" if args else "font-size: 12pt"
 
 
 def get_font_family(args):
+    # Function to get font family: defaults to minion pro
     return "font-family:" + args if args else "font-family: Minion Pro"
+
+
+def get_line_height(args):
+    # Function to get line height: defaults to 14.4pt
+    return "line-height:" + args + "pt" if args else "line-height: 14.4pt"
 
 
 def process_stories(args, package):
@@ -68,11 +74,16 @@ def process_stories(args, package):
                 fontColor = decode_color.get_color(fontColor, package, args)
 
                 # Get the font family
-                fontFamily = "font-family: Minion Pro"
+                fontFamily = get_font_family(None)
+                # Get the line height
+                lineHeight = get_line_height(None)
 
                 for child in characterStyleRange.iter():
                     if child.tag == "Properties":
                         for properties in child.iter():
+                            if properties.tag == "Leading":
+                                lineHeight = get_line_height(properties.text)
+
                             if properties.tag == "AppliedFont":
                                 fontFamily = get_font_family(properties.text)
 
@@ -80,6 +91,7 @@ def process_stories(args, package):
                         characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
                         characterStyle += fontColor + ";" if fontColor else ""
                         characterStyle += fontFamily + ";" if fontFamily else ""
+                        characterStyle += lineHeight + ";" if lineHeight else ""
                         characterStyle += fontSize + ";" if fontSize else ""
                         characterStyle += "'>" + child.text if child.text else "'>"
                         characterStyle += "</span>"
