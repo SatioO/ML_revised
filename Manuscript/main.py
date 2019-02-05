@@ -67,6 +67,9 @@ def process_stories(args, package):
                 fontColor = characterStyleRange.attrib.get("FillColor")
                 fontColor = decode_color.get_color(fontColor, package, args)
 
+                # Get the font family
+                fontFamily = "font-family: Minion Pro"
+
                 for child in characterStyleRange.iter():
                     if child.tag == "Properties":
                         for properties in child.iter():
