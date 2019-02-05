@@ -33,6 +33,10 @@ def get_font_size(args):
     return "font-size: " + args + "pt" if args else "font-size: 12pt"
 
 
+def get_font_family(args):
+    return "font-family:" + args if args else "font-family: Minion Pro"
+
+
 def process_stories(args, package):
     for story in package.stories:
         tree = ET.parse(args.extract + story)
@@ -64,9 +68,15 @@ def process_stories(args, package):
                 fontColor = decode_color.get_color(fontColor, package, args)
 
                 for child in characterStyleRange.iter():
+                    if child.tag == "Properties":
+                        for properties in child.iter():
+                            if properties.tag == "AppliedFont":
+                                fontFamily = get_font_family(properties.text)
+
                     if child.tag == "Content":
-                        characterStyle += "<span style='" + fontStyle + ";"
+                        characterStyle += "<span style='" + fontStyle + ";" if fontStyle else ""
                         characterStyle += fontColor + ";" if fontColor else ""
+                        characterStyle += fontFamily + ";" if fontFamily else ""
                         characterStyle += fontSize + ";" if fontSize else ""
                         characterStyle += "'>" + child.text if child.text else "'>"
                         characterStyle += "</span>"

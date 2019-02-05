@@ -13,7 +13,6 @@ def get_color(color, package, args):
     for i in tree.getroot().iter("Color"):
         if i.attrib["Self"] == color:
             colorValue = i.attrib["ColorValue"].split(" ")
-            print(colorValue)
             currentColor = "rgb" + str(cmyk_to_rgb(
                 float(colorValue[0]), float(colorValue[1]), float(colorValue[2]), float(colorValue[3])))
 
