@@ -17,7 +17,6 @@ def process_stories(args, package):
             # Get the text alignment
             alignment = paragraphStyleRange.attrib.get("Justification")
             alignment = commons.get_alignment(alignment)
-
             listItemParagraph = paragraphStyleRange.attrib.get(
                 "BulletsAndNumberingListType")
 
@@ -78,10 +77,22 @@ def process_stories(args, package):
 
                     # Get the font family
                     fontFamily = commons.get_font_family(None)
+                    
                     # Get the line height
                     lineHeight = commons.get_line_height(None)
 
+                    # Get the Image url
+                    imageUrl = ""
                     for child in characterStyleRange.iter():
+                        if child.tag == "Rectangle":
+                            for properties in child.iter():
+                                if properties.tag == "Image":
+                                    for link in properties.iter():
+                                        if link.tag == "Link":
+                                            imageUrl = commons.process_image(
+                                                link.attrib.get("LinkResourceURI"))
+                                            characterStyle += imageUrl
+
                         if child.tag == "Properties":
                             for properties in child.iter():
                                 if properties.tag == "Leading":

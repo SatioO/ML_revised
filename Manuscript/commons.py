@@ -1,5 +1,9 @@
+import glob
+import imageio
 import xml.etree.ElementTree as ET
 import decode_color
+from urllib.parse import unquote
+import base64
 
 
 def get_alignment(args):
@@ -75,3 +79,10 @@ def get_text_decoration(args):
 
 def get_strike_through(args):
     return "text-decoration: line-through" if args else None
+
+
+def process_image(url):
+    url = unquote(url).split(":")
+    with open(url[1], "rb") as f:
+        b = base64.b64encode(f.read())
+    return "<span style='display: block'><img style='display: inline-block; width: 427.95pt; height: 636.798pt' src='data:image/png;base64," + str(b).split("'")[1] + "'/></span>"
