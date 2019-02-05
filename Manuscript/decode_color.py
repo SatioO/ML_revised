@@ -1,10 +1,26 @@
+import xml.etree.ElementTree as ET
+
 rgb_scale = 255
 cmyk_scale = 100
 
 
+def get_color(color, package, args):
+    tree = ET.parse(
+        args.extract + package.graphic.name)
+
+    currentColor = "rgb(0, 0, 0)"
+
+    for i in tree.getroot().iter("Color"):
+        if i.attrib["Self"] == color:
+            colorValue = i.attrib["ColorValue"].split(" ")
+            print(colorValue)
+            currentColor = "rgb" + str(cmyk_to_rgb(
+                float(colorValue[0]), float(colorValue[1]), float(colorValue[2]), float(colorValue[3])))
+
+    return "color:" + currentColor
+
+
 def cmyk_to_rgb(c, m, y, k):
-    """
-    """
     r = rgb_scale*(1.0-(c+k)/float(cmyk_scale))
     g = rgb_scale*(1.0-(m+k)/float(cmyk_scale))
     b = rgb_scale*(1.0-(y+k)/float(cmyk_scale))

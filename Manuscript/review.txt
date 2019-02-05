@@ -1,0 +1,22 @@
+NotificationAPI
+ -> Seperate the kafka producer logic from validation.
+ -> Service is restarting again and again when there is an issue with kafka connection.
+ -> service is not getting restarted in case kafka goes down in between of the runtime.
+ -> Service is getting restarted everytime where it is not able to produce events to the kafka.
+ -> No consistency betwn variable name.
+ -> Secrets file is being accessed from outside environment.
+ -> No seperation of application config
+ -> Error handling needs to be improved. (standard payload)
+ -> Object types are not consistent.
+ -> Payload structure can be simplified.
+ -> seperate out config into multiple functions
+ -> change the type of config to {}
+ -> Unnecessory IIFE function swap_calls
+ -> remove dbAPI
+ -> Not following proper response structure 
+ -> JOI structure promise issue
+ 
+ dependencies 
+    | kafka 
+
+- Proper documentation

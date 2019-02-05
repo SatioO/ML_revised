@@ -3,6 +3,7 @@ import os
 import shutil
 from simple_idml import idml
 import xml.etree.ElementTree as ET
+import decode_color
 
 
 def get_alignment(args):
@@ -49,6 +50,7 @@ def process_stories(args, package):
                     "CharacterStyleRange"):
 
                 characterStyle = ""
+
                 # Get the font style
                 fontStyle = characterStyleRange.attrib.get("FontStyle")
                 fontStyle = get_font_weight(fontStyle)
@@ -57,9 +59,14 @@ def process_stories(args, package):
                 fontSize = characterStyleRange.attrib.get("PointSize")
                 fontSize = get_font_size(fontSize)
 
+                # Get the font color
+                fontColor = characterStyleRange.attrib.get("FillColor")
+                fontColor = decode_color.get_color(fontColor, package, args)
+
                 for child in characterStyleRange.iter():
                     if child.tag == "Content":
                         characterStyle += "<span style='" + fontStyle + ";"
+                        characterStyle += fontColor + ";" if fontColor else ""
                         characterStyle += fontSize + ";" if fontSize else ""
                         characterStyle += "'>" + child.text if child.text else "'>"
                         characterStyle += "</span>"
