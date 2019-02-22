@@ -2,15 +2,16 @@ import argparse
 import os
 import shutil
 from simple_idml import idml
-import process_story as process
+import process_story as utils
+
 
 
 def process_stories(args, package):
-    for story in package.stories:
-        htmlContent = process.process_story(story, package, args)
-        file = open(args.extract + "text.html", "w")
-        file.write(htmlContent)
-        file.close()
+    # get the spread data
+    output = utils.process_spreads(args, package)
+    file = open(args.extract + "text.html", "w")
+    file.write(output)
+    file.close()
 
 
 def process_file(args):

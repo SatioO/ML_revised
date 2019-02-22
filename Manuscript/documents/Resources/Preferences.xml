@@ -202,7 +202,7 @@
 			<ChapterNumberFormat type="string">1, 2, 3, 4...</ChapterNumberFormat>
 		</Properties>
 	</ChapterNumberPreference>
-	<DocumentPreference PageHeight="708.6614173236001" PageWidth="498.89763779520007" PagesPerDocument="1" FacingPages="true" DocumentBleedTopOffset="0" DocumentBleedBottomOffset="0" DocumentBleedInsideOrLeftOffset="0" DocumentBleedOutsideOrRightOffset="0" DocumentBleedUniformSize="true" SlugTopOffset="0" SlugBottomOffset="0" SlugInsideOrLeftOffset="0" SlugRightOrOutsideOffset="0" DocumentSlugUniformSize="false" PreserveLayoutWhenShuffling="true" AllowPageShuffle="true" OverprintBlack="true" PageBinding="LeftToRight" ColumnDirection="Horizontal" Intent="PrintIntent" CreatePrimaryTextFrame="false" ColumnGuideLocked="true" MasterTextFrame="false" SnippetImportUsesOriginalLocation="false">
+	<DocumentPreference PageHeight="792" PageWidth="612" PagesPerDocument="1" FacingPages="true" DocumentBleedTopOffset="0" DocumentBleedBottomOffset="0" DocumentBleedInsideOrLeftOffset="0" DocumentBleedOutsideOrRightOffset="0" DocumentBleedUniformSize="true" SlugTopOffset="0" SlugBottomOffset="0" SlugInsideOrLeftOffset="0" SlugRightOrOutsideOffset="0" DocumentSlugUniformSize="false" PreserveLayoutWhenShuffling="true" AllowPageShuffle="true" OverprintBlack="true" PageBinding="LeftToRight" ColumnDirection="Horizontal" Intent="PrintIntent" CreatePrimaryTextFrame="false" ColumnGuideLocked="true" MasterTextFrame="false" SnippetImportUsesOriginalLocation="false">
 		<Properties>
 			<ColumnGuideColor type="enumeration">Violet</ColumnGuideColor>
 			<MarginGuideColor type="enumeration">Magenta</MarginGuideColor>
@@ -227,7 +227,7 @@
 			<SlugGuideColor type="enumeration">GridBlue</SlugGuideColor>
 		</Properties>
 	</PasteboardPreference>
-	<ViewPreference ShowNotes="true" GuideSnaptoZone="4" CursorKeyIncrement="1" HorizontalMeasurementUnits="Picas" VerticalMeasurementUnits="Picas" RulerOrigin="SpreadOrigin" ShowRulers="true" ShowFrameEdges="true" LineMeasurementUnits="Points" TypographicMeasurementUnits="Points" TextSizeMeasurementUnits="Points" PrintDialogMeasurementUnits="Inches" StrokeMeasurementUnits="Points" PointsPerInch="72" HorizontalCustomPoints="12" VerticalCustomPoints="12" />
+	<ViewPreference ShowNotes="true" GuideSnaptoZone="4" CursorKeyIncrement="1" HorizontalMeasurementUnits="Inches" VerticalMeasurementUnits="Inches" RulerOrigin="SpreadOrigin" ShowRulers="true" ShowFrameEdges="true" LineMeasurementUnits="Points" TypographicMeasurementUnits="Points" TextSizeMeasurementUnits="Points" PrintDialogMeasurementUnits="Inches" StrokeMeasurementUnits="Points" PointsPerInch="72" HorizontalCustomPoints="12" VerticalCustomPoints="12" />
 	<TransparencyPreference BlendingSpace="CMYK" GlobalLightAngle="120" GlobalLightAltitude="30" />
 	<TransparencyDefaultContainerObject>
 		<TransparencySetting>

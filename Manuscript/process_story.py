@@ -2,7 +2,23 @@ import xml.etree.ElementTree as ET
 import commons
 
 
-def process_story(story, package, args):
+def process_spreads(args, package):
+    output = ""
+
+    for spread in package.spreads:
+        tree = ET.parse(args.extract + spread)
+        root = tree.getroot()
+
+        for TextFrame in root.iter("TextFrame"):
+            story = TextFrame.attrib["ParentStory"]
+            story = "Stories/Story_" + story + ".xml"
+
+            if story in package.stories:
+                output += process_story(args, story, package)
+
+    return output
+
+def process_story(args, story, package):
     tree = ET.parse(args.extract + story)
     root = tree.getroot()
 

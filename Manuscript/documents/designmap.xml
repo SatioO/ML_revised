@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?aid style="50" type="document" readerVersion="6.0" featureSet="257" product="14.0(209)" ?>
-<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0" Self="d" StoryList="u102 uaa" Name="test2.indd" ZeroPoint="0 0" ActiveLayer="uc5" CMYKProfile="U.S. Web Coated (SWOP) v2" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
+<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0" Self="d" StoryList="u102 u125 u140 uaa" Name="Untitled-1" ZeroPoint="0 0" ActiveLayer="uc5" CMYKProfile="U.S. Web Coated (SWOP) v2" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
 	<Properties>
 		<Label>
 			<KeyValuePair Key="kAdobeDPS_Version" Value="2" />
@@ -134,7 +134,7 @@
 	<idPkg:Spread src="Spreads/Spread_ud0.xml" />
 	<idPkg:Spread src="Spreads/Spread_ud1.xml" />
 	<idPkg:Spread src="Spreads/Spread_uea.xml" />
-	<Section Self="uf0" Length="10" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ucd" SectionPrefix="" AlternateLayoutLength="10" AlternateLayout="B5 V">
+	<Section Self="uf0" Length="10" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ucd" SectionPrefix="" AlternateLayoutLength="10" AlternateLayout="Letter V">
 		<Properties>
 			<PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
 		</Properties>
@@ -190,6 +190,8 @@
 		<BuildingBlock Self="ua0BuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
 	</CrossReferenceFormat>
 	<idPkg:BackingStory src="XML/BackingStory.xml" />
+	<idPkg:Story src="Stories/Story_u140.xml" />
+	<idPkg:Story src="Stories/Story_u125.xml" />
 	<idPkg:Story src="Stories/Story_u102.xml" />
 	<ColorGroup Self="ColorGroup/[Root Color Group]" Name="[Root Color Group]" IsRootColorGroup="true">
 		<ColorGroupSwatch Self="u18ColorGroupSwatch0" SwatchItemRef="Swatch/None" />
