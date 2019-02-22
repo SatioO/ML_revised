@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0">
-	<Spread Self="uc8" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" ShowMasterItems="true" PageCount="1" BindingLocation="0" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 0" FlattenerOverride="Default">
+	<Spread Self="u11a" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" ShowMasterItems="true" PageCount="1" BindingLocation="1" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 775.2755905512" FlattenerOverride="Default">
 		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
 			<Properties>
 				<RasterVectorBalance type="double">50</RasterVectorBalance>
 			</Properties>
 		</FlattenerPreference>
-		<Page Self="ucd" TabOrder="" AppliedMaster="uf1" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="1" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 708.6614173236001 498.89763779520007" ItemTransform="1 0 0 1 0 -354.33070866180003" AppliedAlternateLayout="uf0" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
+		<Page Self="u11f" TabOrder="" AppliedMaster="ucf" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="2" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 595.2755905512 419.5275590557" ItemTransform="1 0 0 1 -419.5275590557 -297.6377952756" AppliedAlternateLayout="uce" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
 			<Properties>
 				<PageColor type="enumeration">UseMasterColor</PageColor>
 				<Descriptor type="list">
@@ -14,26 +14,26 @@
 					<ListItem type="enumeration">Arabic</ListItem>
 					<ListItem type="boolean">true</ListItem>
 					<ListItem type="boolean">false</ListItem>
-					<ListItem type="long">1</ListItem>
+					<ListItem type="long">2</ListItem>
 					<ListItem type="string"></ListItem>
 				</Descriptor>
 			</Properties>
-			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 426.89763779520007" />
+			<MarginPreference ColumnCount="1" ColumnGutter="12" Top="36" Bottom="36" Left="36" Right="36" ColumnDirection="Horizontal" ColumnsPositions="0 347.5275590557" />
 			<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
 				<Properties>
 					<AppliedFont type="string">Minion Pro</AppliedFont>
 				</Properties>
 			</GridDataInformation>
 		</Page>
-		<TextFrame Self="u114" ParentStory="u102" PreviousTextFrame="n" NextTextFrame="u119" ContentType="TextType" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc5" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 249.44881889760003 0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+		<TextFrame Self="u120" ParentStory="u101" PreviousTextFrame="u116" NextTextFrame="n" ContentType="TextType" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="uc5" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[Normal Text Frame]" ItemTransform="1 0 0 1 -383.0275590557 -261.13779527560007" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 			<Properties>
 				<PathGeometry>
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
-							<PathPointType Anchor="-213.44881889760003 -318.33070866180003" LeftDirection="-213.44881889760003 -318.33070866180003" RightDirection="-213.44881889760003 -318.33070866180003" />
-							<PathPointType Anchor="-213.44881889760003 318.33070866180003" LeftDirection="-213.44881889760003 318.33070866180003" RightDirection="-213.44881889760003 318.33070866180003" />
-							<PathPointType Anchor="213.44881889760003 318.33070866180003" LeftDirection="213.44881889760003 318.33070866180003" RightDirection="213.44881889760003 318.33070866180003" />
-							<PathPointType Anchor="213.44881889760003 -318.33070866180003" LeftDirection="213.44881889760003 -318.33070866180003" RightDirection="213.44881889760003 -318.33070866180003" />
+							<PathPointType Anchor="-0.5 -0.5" LeftDirection="-0.5 -0.5" RightDirection="-0.5 -0.5" />
+							<PathPointType Anchor="-0.5 522.7755905512003" LeftDirection="-0.5 522.7755905512003" RightDirection="-0.5 522.7755905512003" />
+							<PathPointType Anchor="347.0275590557 522.7755905512003" LeftDirection="347.0275590557 522.7755905512003" RightDirection="347.0275590557 522.7755905512003" />
+							<PathPointType Anchor="347.0275590557 -0.5" LeftDirection="347.0275590557 -0.5" RightDirection="347.0275590557 -0.5" />
 						</PathPointArray>
 					</GeometryPathType>
 				</PathGeometry>
@@ -44,7 +44,7 @@
 					<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
 				</Properties>
 			</ObjectExportOption>
-			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="426.89763779520007" TextColumnMaxWidth="0">
+			<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="347.5275590557" TextColumnMaxWidth="0">
 				<Properties>
 					<InsetSpacing type="list">
 						<ListItem type="unit">0</ListItem>

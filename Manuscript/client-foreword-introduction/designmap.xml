@@ -1,67 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?aid style="50" type="document" readerVersion="6.0" featureSet="257" product="14.0(209)" ?>
-<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0" Self="d" StoryList="u102 uaa" Name="test2.indd" ZeroPoint="0 0" ActiveLayer="uc5" CMYKProfile="U.S. Web Coated (SWOP) v2" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
+<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0" Self="d" StoryList="u101 uaa" Name="Intro Template 1 - Client Foreword.indd" ZeroPoint="0 0" ActiveLayer="uc5" CMYKProfile="U.S. Web Coated (SWOP) v2" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
 	<Properties>
 		<Label>
 			<KeyValuePair Key="kAdobeDPS_Version" Value="2" />
 		</Label>
 	</Properties>
-	<Language Self="Language/$ID/[No Language]" Name="$ID/[No Language]" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/[No Language]" SublanguageName="$ID/[No Language]" Id="0" HyphenationVendor="$ID/" SpellingVendor="$ID/" />
-	<Language Self="Language/$ID/German%3a Reformed" Name="$ID/German: Reformed" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Reformed" Id="275" HyphenationVendor="Duden" SpellingVendor="Duden" />
-	<Language Self="Language/$ID/de_DE_2006" Name="$ID/de_DE_2006" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/de_DE_2006" SublanguageName="$ID/" Id="275" HyphenationVendor="Duden" SpellingVendor="Duden" />
-	<Language Self="Language/$ID/German%3a Swiss" Name="$ID/German: Swiss" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Swiss" Id="531" HyphenationVendor="Duden" SpellingVendor="Duden" />
-	<Language Self="Language/$ID/de_CH_2006" Name="$ID/de_CH_2006" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/de_CH_2006" SublanguageName="$ID/" Id="531" HyphenationVendor="Duden" SpellingVendor="Duden" />
-	<Language Self="Language/$ID/German%3a Austrian" Name="$ID/German: Austrian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Austrian" Id="787" HyphenationVendor="Duden" SpellingVendor="Duden" />
-	<Language Self="Language/$ID/bn_IN" Name="$ID/bn_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/gu_IN" Name="$ID/gu_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/hi_IN" Name="$ID/hi_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/kn_IN" Name="$ID/kn_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/ml_IN" Name="$ID/ml_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/mr_IN" Name="$ID/mr_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/or_IN" Name="$ID/or_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/pa_IN" Name="$ID/pa_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/ta_IN" Name="$ID/ta_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/te_IN" Name="$ID/te_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Bulgarian" Name="$ID/Bulgarian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Bulgarian" SublanguageName="$ID/" Id="261" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Catalan" Name="$ID/Catalan" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Catalan" SublanguageName="$ID/" Id="263" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Czech" Name="$ID/Czech" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Czech" SublanguageName="$ID/" Id="266" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Danish" Name="$ID/Danish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Danish" SublanguageName="$ID/" Id="267" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Greek" Name="$ID/Greek" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Greek" SublanguageName="$ID/" Id="276" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/English%3a Canadian" Name="$ID/English: Canadian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/Canadian" Id="1037" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/English%3a UK" Name="$ID/English: UK" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/UK" Id="525" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
 	<Language Self="Language/$ID/English%3a USA" Name="$ID/English: USA" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA" Id="269" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/English%3a USA Medical" Name="$ID/English: USA Medical" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA Medical" Id="269" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Spanish%3a Castilian" Name="$ID/Spanish: Castilian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Spanish" SublanguageName="$ID/Castilian" Id="294" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Estonian" Name="$ID/Estonian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Estonian" SublanguageName="$ID/" Id="270" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Finnish" Name="$ID/Finnish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Finnish" SublanguageName="$ID/" Id="273" HyphenationVendor="Hunspell" SpellingVendor="Proximity" />
-	<Language Self="Language/$ID/French%3a Canadian" Name="$ID/French: Canadian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/French" SublanguageName="$ID/Canadian" Id="786" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/French" Name="$ID/French" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/French" SublanguageName="$ID/" Id="274" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Croatian" Name="$ID/Croatian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Croatian" SublanguageName="$ID/" Id="265" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Hungarian" Name="$ID/Hungarian" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Hungarian" SublanguageName="$ID/" Id="278" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Italian" Name="$ID/Italian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Italian" SublanguageName="$ID/" Id="281" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Lithuanian" Name="$ID/Lithuanian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Lithuanian" SublanguageName="$ID/" Id="285" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Latvian" Name="$ID/Latvian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Latvian" SublanguageName="$ID/" Id="284" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Norwegian%3a Bokmal" Name="$ID/Norwegian: Bokmal" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Norwegian" SublanguageName="$ID/Bokmal" Id="286" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Dutch" Name="$ID/Dutch" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Dutch" SublanguageName="$ID/" Id="268" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/nl_NL_2005" Name="$ID/nl_NL_2005" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/nl_NL_2005" SublanguageName="$ID/" Id="268" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Norwegian%3a Nynorsk" Name="$ID/Norwegian: Nynorsk" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Norwegian" SublanguageName="$ID/Nynorsk" Id="542" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Polish" Name="$ID/Polish" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Polish" SublanguageName="$ID/" Id="287" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Portuguese%3a Brazilian" Name="$ID/Portuguese: Brazilian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/Brazilian" Id="544" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Portuguese%3a Orthographic Agreement" Name="$ID/Portuguese: Orthographic Agreement" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/Orthographic Agreement" Id="544" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Portuguese" Name="$ID/Portuguese" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/" Id="288" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Romanian" Name="$ID/Romanian" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Romanian" SublanguageName="$ID/" Id="289" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Russian" Name="$ID/Russian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Russian" SublanguageName="$ID/" Id="290" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Slovak" Name="$ID/Slovak" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Slovak" SublanguageName="$ID/" Id="291" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Slovenian" Name="$ID/Slovenian" SingleQuotes="&apos;&apos;" DoubleQuotes="»«" PrimaryLanguageName="$ID/Slovenian" SublanguageName="$ID/" Id="292" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Swedish" Name="$ID/Swedish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Swedish" SublanguageName="$ID/" Id="295" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Turkish" Name="$ID/Turkish" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Turkish" SublanguageName="$ID/" Id="297" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Ukrainian" Name="$ID/Ukrainian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Ukrainian" SublanguageName="$ID/" Id="298" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/English%3a USA Legal" Name="$ID/English: USA Legal" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA Legal" Id="269" HyphenationVendor="Proximity" SpellingVendor="Proximity" />
-	<Language Self="Language/$ID/German%3a Traditional" Name="$ID/German: Traditional" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Traditional" Id="275" HyphenationVendor="Proximity" SpellingVendor="Proximity" />
-	<Language Self="Language/$ID/Hebrew" Name="$ID/Hebrew" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/Hebrew" SublanguageName="$ID/" Id="277" HyphenationVendor="WinSoft" SpellingVendor="Hunspell" />
-	<Language Self="Language/$ID/Arabic" Name="$ID/Arabic" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/Arabic" SublanguageName="$ID/" Id="257" HyphenationVendor="$ID/" SpellingVendor="Hunspell" />
 	<idPkg:Graphic src="Resources/Graphic.xml" />
 	<idPkg:Fonts src="Resources/Fonts.xml" />
+	<KinsokuTable Self="KinsokuTable/$ID/kHardKinsokuName" Name="$ID/kHardKinsokuName" />
+	<KinsokuTable Self="KinsokuTable/$ID/kSoftKinsokuName" Name="$ID/kSoftKinsokuName" />
+	<KinsokuTable Self="KinsokuTable/$ID/kKoreanKinsokuName" Name="$ID/kKoreanKinsokuName" />
+	<KinsokuTable Self="KinsokuTable/$ID/kSimpChineseKinsokuName" Name="$ID/kSimpChineseKinsokuName" />
+	<KinsokuTable Self="KinsokuTable/$ID/kTradChineseKinsokuName" Name="$ID/kTradChineseKinsokuName" />
+	<KinsokuTable Self="KinsokuTable/Word_Kinsoku" Name="Word_Kinsoku" CantBeginLineChars="" CantEndLineChars="" HangingPunctuationChars="" CantBeSeparatedChars="" />
 	<idPkg:Styles src="Resources/Styles.xml" />
 	<NumberingList Self="NumberingList/$ID/[Default]" Name="$ID/[Default]" ContinueNumbersAcrossStories="false" ContinueNumbersAcrossDocuments="false" />
 	<NamedGrid Self="NamedGrid/$ID/[Page Grid]" Name="$ID/[Page Grid]">
@@ -127,14 +80,10 @@
 			<LayerColor type="enumeration">LightBlue</LayerColor>
 		</Properties>
 	</Layer>
-	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_uf1.xml" />
+	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_ucf.xml" />
 	<idPkg:Spread src="Spreads/Spread_uc8.xml" />
-	<idPkg:Spread src="Spreads/Spread_uce.xml" />
-	<idPkg:Spread src="Spreads/Spread_ucf.xml" />
-	<idPkg:Spread src="Spreads/Spread_ud0.xml" />
-	<idPkg:Spread src="Spreads/Spread_ud1.xml" />
-	<idPkg:Spread src="Spreads/Spread_uea.xml" />
-	<Section Self="uf0" Length="10" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ucd" SectionPrefix="" AlternateLayoutLength="10" AlternateLayout="B5 V">
+	<idPkg:Spread src="Spreads/Spread_u11a.xml" />
+	<Section Self="uce" Length="2" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ucd" SectionPrefix="" AlternateLayoutLength="2" AlternateLayout="A5 V">
 		<Properties>
 			<PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
 		</Properties>
@@ -190,7 +139,7 @@
 		<BuildingBlock Self="ua0BuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
 	</CrossReferenceFormat>
 	<idPkg:BackingStory src="XML/BackingStory.xml" />
-	<idPkg:Story src="Stories/Story_u102.xml" />
+	<idPkg:Story src="Stories/Story_u101.xml" />
 	<ColorGroup Self="ColorGroup/[Root Color Group]" Name="[Root Color Group]" IsRootColorGroup="true">
 		<ColorGroupSwatch Self="u18ColorGroupSwatch0" SwatchItemRef="Swatch/None" />
 		<ColorGroupSwatch Self="u18ColorGroupSwatch1" SwatchItemRef="Color/Registration" />
@@ -243,7 +192,7 @@
 			<BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
 		</Properties>
 	</ABullet>
-	<Assignment Self="uf8" Name="$ID/UnassignedInCopy" UserName="$ID/" ExportOptions="AssignedSpreads" IncludeLinksWhenPackage="true" FilePath="$ID/">
+	<Assignment Self="ud6" Name="$ID/UnassignedInCopy" UserName="$ID/" ExportOptions="AssignedSpreads" IncludeLinksWhenPackage="true" FilePath="$ID/">
 		<Properties>
 			<FrameColor type="enumeration">Nothing</FrameColor>
 		</Properties>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0">
+	<Story Self="u101" UserText="true" IsEndnoteStory="false" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<Properties>
+			<WordRTFImportPreferences type="list">
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="enumeration">PageBreak</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="enumeration">UnformattedTable</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="enumeration">ResolveClashUseExisting</ListItem>
+				<ListItem type="enumeration">ResolveClashUseExisting</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="boolean">true</ListItem>
+				<ListItem type="long">2</ListItem>
+				<ListItem type="boolean">false</ListItem>
+				<ListItem type="boolean">false</ListItem>
+			</WordRTFImportPreferences>
+			<StyleMappingPreferences type="list">
+				<ListItem type="list">
+					<ListItem type="string">Heading 1</ListItem>
+					<ListItem type="string">Heading 1</ListItem>
+					<ListItem type="string">Heading 2</ListItem>
+					<ListItem type="string">Heading 2</ListItem>
+					<ListItem type="string">Heading 3</ListItem>
+					<ListItem type="string">Heading 3</ListItem>
+					<ListItem type="string">Heading 4</ListItem>
+					<ListItem type="string">Heading 4</ListItem>
+					<ListItem type="string">Heading 5</ListItem>
+					<ListItem type="string">Heading 5</ListItem>
+					<ListItem type="string">Heading 6</ListItem>
+					<ListItem type="string">Heading 6</ListItem>
+					<ListItem type="string">Normal</ListItem>
+					<ListItem type="string">Normal</ListItem>
+					<ListItem type="string">Subtitle</ListItem>
+					<ListItem type="string">Subtitle</ListItem>
+					<ListItem type="string">Title</ListItem>
+					<ListItem type="string">Title</ListItem>
+				</ListItem>
+				<ListItem type="list">
+				</ListItem>
+			</StyleMappingPreferences>
+		</Properties>
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" SpaceAfter="10" Justification="CenterAlign">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold Italic" PointSize="20" CharacterDirection="RightToLeftDirection">
+				<Properties>
+					<AppliedFont type="string">Crimson Text</AppliedFont>
+				</Properties>
+				<Content>Foreword</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" CharacterDirection="RightToLeftDirection">
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Normal" SpaceAfter="10">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="12" CharacterDirection="RightToLeftDirection">
+				<Properties>
+					<AppliedFont type="string">Crimson Text</AppliedFont>
+				</Properties>
+				<Content>When AGENT reached out to us to write an introduction to his book, we couldn’t say yes faster. AGENT may not have been the first agent we talked to, but he was certainly the last. </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" CharacterDirection="RightToLeftDirection">
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="12" CharacterDirection="RightToLeftDirection">
+				<Properties>
+					<AppliedFont type="string">Crimson Text</AppliedFont>
+				</Properties>
+				<Content>About one year ago, my wife and I decided to pursue our dream of moving to City. We purchased 10 acres of land back in 1992 and felt now was the time to make our move. </Content>
+				<Br />
+				<Content>We began to call agents from their ads as we pondered the idea of selling our acreage and buying something already built. The real estate agents we spoke to understood our situation, and we told them upfront that we would not be doing anything for at least 6 months. </Content>
+				<Br />
+				<Content>The real estate agents would fax or mail us the info we requested, but that was the last we heard from them, at least until we called AGENT. I could tell AGENT was a go-getter from our telephone conversations. Then, he did the unthinkable. After faxing the info to us, </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Italic" PointSize="12" CharacterDirection="RightToLeftDirection">
+				<Properties>
+					<AppliedFont type="string">Crimson Text</AppliedFont>
+				</Properties>
+				<Content>he followed up with a phone call. </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="12" CharacterDirection="RightToLeftDirection">
+				<Properties>
+					<AppliedFont type="string">Crimson Text</AppliedFont>
+				</Properties>
+				<Content>I must admit, we were really impressed with AGENT not only for his phone calls, but because he never rushed us, and seemed to understand that it would be some time before we actually purchased something. As time went on, he never called too often, but always stayed in touch and offered his services. </Content>
+				<Br />
+				<Content>About 3 months later, we decided it was time to meet AGENT to look at some properties. He gladly lined up several properties for us to see. After spending the afternoon with AGENT, we realized it was going to be best for us to build on our land. </Content>
+				<Br />
+				<Content>AGENT helped us from start to finish in securing a builder and landing a deal. Now came the best part. Since we were moving our home here, we now needed a place for our business. Well, guess who was there for us?</Content>
+				<Br />
+				<Content>Because of simple little things like follow-up phone calls, patience, and eagerness to help his customers, AGENT received the commissions for our home at $165,000, and the building for our book store at $425,000. </Content>
+				<Br />
+				<Content>We were totally amazed at the professionalism, expertise, and kindness we were shown from start to finish. AGENT will be our agent for as long as we need one, and that does not happen often in this industry. </Content>
+				<Br />
+				<Content>. </Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>
