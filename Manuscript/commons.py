@@ -6,7 +6,7 @@ from urllib.parse import unquote
 import base64
 
 def get_image_border_radius(attrib):
-    return "border-radius:" + attrib["CornerRadius"] +"pt" if attrib.get("CornerRadius") else "border-radius: 0pt"
+    return "border-radius:" + attrib["CornerRadius"] +"pt;" if attrib.get("CornerRadius") and attrib.get("TopLeftCornerOption") == "RoundedCorner" else "border-radius: 0pt;"
 
 def handle_cover(attrib):
     return "object-fit: cover;"
@@ -21,7 +21,7 @@ def handle_fill(attrib):
 def handle_default(attrib):
     return "object-fit: none;"
 
-def get_image_framing(attrib):
+def get_image_framing(properties):
     switcher = {
         "FillProportionally": handle_cover,
         "Proportionally": handle_contain,
@@ -29,7 +29,10 @@ def get_image_framing(attrib):
         "default": handle_default
     }
 
-    return switcher.get(attrib["FittingOnEmptyFrame"], switcher["default"])(attrib)
+    return switcher.get(properties["FittingOnEmptyFrame"], switcher["default"])(properties)
+
+def get_image_opacity(properties):
+    return "opacity:" + str(int(properties["Opacity"]) / 100) + ";" if properties.get("Opacity") else "opacity: 1;"
 
 def get_image_size(properties):
     size = {}
