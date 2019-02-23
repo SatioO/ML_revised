@@ -18,14 +18,14 @@ def process_spreads(args, package):
                     output += process_story(args, story, package)
 
             if(iterator.tag == "Rectangle"):
-                outerStyle = "display: inline-block;overflow:hidden;"
-                innerStyle = "width: 100%; height: 100%;"
+                outerStyle = "display: inline-block; overflow:hidden;"
+                innerStyle = ""
 
                 border_radius = commons.get_image_border_radius(iterator.attrib)
                 outerStyle += border_radius
                 for properties in iterator.iter():
                     if properties.tag == "PathGeometry":
-                        size, width, height = commons.get_image_size(properties)
+                        size, width, height = commons.get_image_container_size(properties)
                         outerStyle += "width:" + size["width"] +";height:" + size["height"] +";"
                     
                     if properties.tag == "FrameFittingOption":

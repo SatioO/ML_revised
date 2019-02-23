@@ -7,48 +7,42 @@ import base64
 
 def get_image_position(attrib, iterator):
     style = ""
+    container = {}
+
     for properties in iterator.iter():
         if properties.tag == "PathGeometry":
-            size, width, height = get_image_size(properties)
+            size, container_width, container_height = get_image_container_size(properties)
 
         if properties.tag == "Image":
             transformation = get_image_transformation(properties.attrib)
+            
+            for item in properties.iter():
+                if item.tag == "GraphicBounds":
+                   container["width"] = float(item.attrib["Bottom"])
+                   container["height"] =  float(item.attrib["Right"])
 
-    style += "object-position: "
-
-    if attrib.get("LeftCrop"):
-        style += str(float(transformation[4]) - width[0]) + "pt" + " "
-    else:
-        style += "0pt" + " "
-
-    if attrib.get("TopCrop"):
-        style += str(float(transformation[5]) - height[0]) + "pt"
-    else:
-        style += "0pt"
+    style += "object-position: "     
+    style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
+    style += str(float(transformation[5]) - container_height[0]) + "pt;"
     
-    style += ";"
-
+    style +="width: " + str(float(transformation[0]) * container["width"]) + "pt;"
+    style += "height: " + str(float(transformation[3]) * container["height"]) + "pt;"
+    
     return style
 
 def get_image_border_radius(attrib):
     return "border-radius:" + attrib["CornerRadius"] +"pt;" if attrib.get("CornerRadius") and attrib.get("TopLeftCornerOption") == "RoundedCorner" else "border-radius: 0pt;"
 
 def handle_cover(attrib, iterator):
-    style = "object-fit: cover;";
-    
-    if attrib.get("LeftCrop") or attrib.get("TopCrop"):
-        style += get_image_position(attrib, iterator)
+    return get_image_position(attrib, iterator)
 
-    return style
+def handle_contain(attrib, iterator):
+    return get_image_position(attrib, iterator)
 
-def handle_contain(attrib):
-    print(attrib)
-    return "object-fit: contain;"
-
-def handle_fill(attrib):
+def handle_fill(attrib, iterator):
     return "object-fit: fill;"
 
-def handle_default(attrib):
+def handle_default(attrib, iterator):
     return "object-fit: none;"
 
 def get_image_framing(properties, iterator):
@@ -67,7 +61,7 @@ def get_image_opacity(properties):
 def get_image_transformation(properties):
     return properties["ItemTransform"].split(" ") if properties.get("ItemTransform") else [0,0,0,0,0,0]
 
-def get_image_size(properties):
+def get_image_container_size(properties):
     size = {}
     width = []
     height = []
