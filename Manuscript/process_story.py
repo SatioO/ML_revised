@@ -25,11 +25,13 @@ def process_spreads(args, package):
                 outerStyle += border_radius
                 for properties in iterator.iter():
                     if properties.tag == "PathGeometry":
-                        size = commons.get_image_size(properties)
+                        size, width, height = commons.get_image_size(properties)
                         outerStyle += "width:" + size["width"] +";height:" + size["height"] +";"
+                    
                     if properties.tag == "FrameFittingOption":
-                        frame = commons.get_image_framing(properties.attrib)
+                        frame = commons.get_image_framing(properties.attrib, iterator)
                         innerStyle += frame
+                    
                     if properties.tag == "BlendingSetting":
                         opacity = commons.get_image_opacity(properties.attrib)
                         innerStyle += opacity

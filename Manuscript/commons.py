@@ -5,11 +5,41 @@ import decode_color
 from urllib.parse import unquote
 import base64
 
+def get_image_position(attrib, iterator):
+    style = ""
+    for properties in iterator.iter():
+        if properties.tag == "PathGeometry":
+            size, width, height = get_image_size(properties)
+
+        if properties.tag == "Image":
+            transformation = get_image_transformation(properties.attrib)
+
+    style += "object-position: "
+
+    if attrib.get("LeftCrop"):
+        style += str(float(transformation[4]) - width[0]) + "pt" + " "
+    else:
+        style += "0pt" + " "
+
+    if attrib.get("TopCrop"):
+        style += str(float(transformation[5]) - height[0]) + "pt"
+    else:
+        style += "0pt"
+    
+    style += ";"
+
+    return style
+
 def get_image_border_radius(attrib):
     return "border-radius:" + attrib["CornerRadius"] +"pt;" if attrib.get("CornerRadius") and attrib.get("TopLeftCornerOption") == "RoundedCorner" else "border-radius: 0pt;"
 
-def handle_cover(attrib):
-    return "object-fit: cover;"
+def handle_cover(attrib, iterator):
+    style = "object-fit: cover;";
+    
+    if attrib.get("LeftCrop") or attrib.get("TopCrop"):
+        style += get_image_position(attrib, iterator)
+
+    return style
 
 def handle_contain(attrib):
     print(attrib)
@@ -21,7 +51,7 @@ def handle_fill(attrib):
 def handle_default(attrib):
     return "object-fit: none;"
 
-def get_image_framing(properties):
+def get_image_framing(properties, iterator):
     switcher = {
         "FillProportionally": handle_cover,
         "Proportionally": handle_contain,
@@ -29,10 +59,13 @@ def get_image_framing(properties):
         "default": handle_default
     }
 
-    return switcher.get(properties["FittingOnEmptyFrame"], switcher["default"])(properties)
+    return switcher.get(properties["FittingOnEmptyFrame"], switcher["default"])(properties, iterator)
 
 def get_image_opacity(properties):
     return "opacity:" + str(int(properties["Opacity"]) / 100) + ";" if properties.get("Opacity") else "opacity: 1;"
+
+def get_image_transformation(properties):
+    return properties["ItemTransform"].split(" ") if properties.get("ItemTransform") else [0,0,0,0,0,0]
 
 def get_image_size(properties):
     size = {}
@@ -46,10 +79,10 @@ def get_image_size(properties):
         if not float(points[1]) in height:
             height.append(float(points[1]))
     
-    size["width"] = str(-(width[0] - width[1])) + "px"
-    size["height"] = str(-(height[0] - height[1])) + "px"
+    size["width"] = str(-(width[0] - width[1])) + "pt"
+    size["height"] = str(-(height[0] - height[1])) + "pt"
     
-    return size
+    return size, width, height
     
 def get_alignment(args):
     # Function to get text alignment : defaults to left
