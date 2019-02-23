@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <idPkg:Spread xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0">
-	<Spread Self="ud1" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" ShowMasterItems="true" PageCount="2" BindingLocation="1" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 3888" FlattenerOverride="Default">
+	<Spread Self="u154" PageTransitionType="None" PageTransitionDirection="NotApplicable" PageTransitionDuration="Medium" ShowMasterItems="true" PageCount="2" BindingLocation="1" AllowPageShuffle="true" ItemTransform="1 0 0 1 0 2916" FlattenerOverride="Default">
 		<FlattenerPreference LineArtAndTextResolution="300" GradientAndMeshResolution="150" ClipComplexRegions="false" ConvertAllStrokesToOutlines="false" ConvertAllTextToOutlines="false">
 			<Properties>
 				<RasterVectorBalance type="double">50</RasterVectorBalance>
 			</Properties>
 		</FlattenerPreference>
-		<Page Self="ue8" TabOrder="" AppliedMaster="uf1" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="8" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 792 612" ItemTransform="1 0 0 1 -612 -396" AppliedAlternateLayout="uf0" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
+		<Page Self="u159" TabOrder="" AppliedMaster="ub2" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="6" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 792 612" ItemTransform="1 0 0 1 -612 -396" AppliedAlternateLayout="uad" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
 			<Properties>
 				<PageColor type="enumeration">UseMasterColor</PageColor>
 				<Descriptor type="list">
@@ -14,7 +14,7 @@
 					<ListItem type="enumeration">Arabic</ListItem>
 					<ListItem type="boolean">true</ListItem>
 					<ListItem type="boolean">false</ListItem>
-					<ListItem type="long">8</ListItem>
+					<ListItem type="long">6</ListItem>
 					<ListItem type="string"></ListItem>
 				</Descriptor>
 			</Properties>
@@ -25,7 +25,7 @@
 				</Properties>
 			</GridDataInformation>
 		</Page>
-		<Page Self="ue9" TabOrder="" AppliedMaster="uf1" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="9" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 792 612" ItemTransform="1 0 0 1 0 -396" AppliedAlternateLayout="uf0" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
+		<Page Self="u15a" TabOrder="" AppliedMaster="ub2" OverrideList="" MasterPageTransform="1 0 0 1 0 0" Name="7" AppliedTrapPreset="TrapPreset/$ID/kDefaultTrapStyleName" GeometricBounds="0 0 792 612" ItemTransform="1 0 0 1 0 -396" AppliedAlternateLayout="uad" LayoutRule="UseMaster" SnapshotBlendingMode="IgnoreLayoutSnapshots" OptionalPage="false" GridStartingPoint="TopOutside" UseMasterGrid="true">
 			<Properties>
 				<PageColor type="enumeration">UseMasterColor</PageColor>
 				<Descriptor type="list">
@@ -33,7 +33,7 @@
 					<ListItem type="enumeration">Arabic</ListItem>
 					<ListItem type="boolean">true</ListItem>
 					<ListItem type="boolean">false</ListItem>
-					<ListItem type="long">9</ListItem>
+					<ListItem type="long">7</ListItem>
 					<ListItem type="string"></ListItem>
 				</Descriptor>
 			</Properties>

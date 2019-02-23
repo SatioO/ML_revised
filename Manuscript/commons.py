@@ -5,7 +5,26 @@ import decode_color
 from urllib.parse import unquote
 import base64
 
+def get_image_border_radius(attrib):
+    return "border-radius:" + attrib["CornerRadius"] +"pt" if attrib.get("CornerRadius") else "border-radius: 0pt"
 
+def get_image_size(properties):
+    size = {}
+    width = []
+    height = []
+
+    for path in properties.iter("PathPointType"):
+        points = path.attrib["Anchor"].split(" ")
+        if not float(points[0]) in width:
+            width.append(float(points[0]))
+        if not float(points[1]) in height:
+            height.append(float(points[1]))
+    
+    size["width"] = str(-(width[0] - width[1])) + "pt"
+    size["height"] = str(-(height[0] - height[1])) + "pt"
+    
+    return size
+    
 def get_alignment(args):
     # Function to get text alignment : defaults to left
     switcher = {
@@ -47,7 +66,7 @@ def get_color(color, package, args):
     tree = ET.parse(
         args.extract + package.graphic.name)
 
-    color_str = "rgb(255, 255, 255)"
+    color_str = "rgb(0, 0, 0)"
     for i in tree.getroot().iter("Color"):
         if i.attrib["Self"] == color:
             colorValue = i.attrib["ColorValue"].split(" ")
@@ -56,7 +75,7 @@ def get_color(color, package, args):
                 if x < len(colorValue):
                     rgb_col.append(int(colorValue[x]))
                 else:
-                    rgb_col.append(255)
+                    rgb_col.append(0)
             color_str = "rgb" + str(decode_color.cmyk_to_rgb(*rgb_col))
 
     return "color:" + color_str
@@ -85,8 +104,8 @@ def get_strike_through(args):
     return "text-decoration: line-through" if args else None
 
 
-def process_image(url):
+def process_image(url, style):
     url = unquote(url).split(":")
     with open(url[1], "rb") as f:
         b = base64.b64encode(f.read())
-    return "<span style='display: block'><img style='display: inline-block; width: 427.95pt; height: 636.798pt' src='data:image/png;base64," + str(b).split("'")[1] + "'/></span>"
+    return "<span style='display: block'><img style='" + style + "' src='data:image/png;base64," + str(b).split("'")[1] + "'/></span>"

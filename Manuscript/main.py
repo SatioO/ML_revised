@@ -9,6 +9,7 @@ import process_story as utils
 def process_stories(args, package):
     # get the spread data
     output = utils.process_spreads(args, package)
+    
     file = open(args.extract + "text.html", "w")
     file.write(output)
     file.close()

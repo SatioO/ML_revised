@@ -8,7 +8,7 @@ def process_spreads(args, package):
     for spread in package.spreads:
         tree = ET.parse(args.extract + spread)
         root = tree.getroot()
-
+        
         for iterator in root.iter():
             if(iterator.tag == "TextFrame"):
                 story = iterator.attrib["ParentStory"]
@@ -16,22 +16,25 @@ def process_spreads(args, package):
 
                 if story in package.stories:
                     output += process_story(args, story, package)
-            
+
             if(iterator.tag == "Rectangle"):
+                style = "display: inline-block;"
+                border_radius = commons.get_image_border_radius(iterator.attrib)
+                style += border_radius + ";"
                 for properties in iterator.iter():
-                    if properties.tag == "PathPointArray":
-                        print(properties)
+                    if properties.tag == "PathGeometry":
+                        size = commons.get_image_size(properties)
+                        style += "width:" + size["width"] +";height=" + size["height"] +";"
                         
                     if properties.tag == "Link":
                         for link in properties.iter():
                             if link.tag == "Link":
                                 imageUrl = commons.process_image(
-                                    link.attrib.get("LinkResourceURI"))
+                                    link.attrib.get("LinkResourceURI"), style)
                                 output += imageUrl
 
-
-
     return output
+
 
 def process_story(args, story, package):
     tree = ET.parse(args.extract + story)
