@@ -18,7 +18,7 @@ def process_spreads(args, package):
                     output += process_story(args, story, package)
 
             if(iterator.tag == "Rectangle"):
-                outerStyle = "display: inline-block;"
+                outerStyle = "display: inline-block;overflow:hidden;"
                 innerStyle = "width: 100%; height: 100%;"
 
                 border_radius = commons.get_image_border_radius(iterator.attrib)

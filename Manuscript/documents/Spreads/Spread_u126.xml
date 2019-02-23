@@ -79,15 +79,15 @@
 				</Properties>
 			</TextWrapPreference>
 		</TextFrame>
-		<Rectangle Self="u18b" ContentType="GraphicType" StoryTitle="$ID/" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub1" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -142.5 101.125" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+		<Rectangle Self="u192" ContentType="GraphicType" StoryTitle="$ID/" OverriddenPageItemProps="" Visible="true" Name="$ID/" TopLeftCornerOption="RoundedCorner" TopRightCornerOption="RoundedCorner" BottomLeftCornerOption="RoundedCorner" BottomRightCornerOption="RoundedCorner" TopLeftCornerRadius="200" TopRightCornerRadius="200" BottomLeftCornerRadius="200" BottomRightCornerRadius="200" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" CornerRadius="200" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub1" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" CornerOption="RoundedCorner" ItemTransform="1 0 0 1 -6 388" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 			<Properties>
 				<PathGeometry>
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
-							<PathPointType Anchor="-247.5 -139.125" LeftDirection="-247.5 -139.125" RightDirection="-247.5 -139.125" />
-							<PathPointType Anchor="-247.5 60.87500000000004" LeftDirection="-247.5 60.87500000000004" RightDirection="-247.5 60.87500000000004" />
-							<PathPointType Anchor="-47.499999999999986 60.87500000000004" LeftDirection="-47.499999999999986 60.87500000000004" RightDirection="-47.499999999999986 60.87500000000004" />
-							<PathPointType Anchor="-47.499999999999986 -139.125" LeftDirection="-47.499999999999986 -139.125" RightDirection="-47.499999999999986 -139.125" />
+							<PathPointType Anchor="-570 -446" LeftDirection="-570 -446" RightDirection="-570 -446" />
+							<PathPointType Anchor="-570 -28.00000000000002" LeftDirection="-570 -28.00000000000002" RightDirection="-570 -28.00000000000002" />
+							<PathPointType Anchor="-30 -28.00000000000002" LeftDirection="-30 -28.00000000000002" RightDirection="-30 -28.00000000000002" />
+							<PathPointType Anchor="-30 -446" LeftDirection="-30 -446" RightDirection="-30 -446" />
 						</PathPointArray>
 					</GeometryPathType>
 				</PathGeometry>
@@ -106,10 +106,10 @@
 				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
 			</TextWrapPreference>
 			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
-			<Image Self="u187" Space="$ID/#Links_RGB" ActualPpi="96 96" EffectivePpi="134 134" ImageRenderingIntent="UseColorSettings" OverriddenPageItemProps="" LocalDisplaySetting="Default" ImageTypeName="$ID/JPEG" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="0.7187780772686435 0 0 0.7187780772686435 -325.3975741239893 -139.125" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+			<Image Self="u18e" Space="$ID/#Links_RGB" ActualPpi="72 72" EffectivePpi="107 107" ImageRenderingIntent="UseColorSettings" OverriddenPageItemProps="" LocalDisplaySetting="Default" ImageTypeName="$ID/JPEG" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="0.675 0 0 0.675 -570 -507" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 				<Properties>
 					<Profile type="string">$ID/None</Profile>
-					<GraphicBounds Left="0" Top="0" Right="495" Bottom="278.25" />
+					<GraphicBounds Left="0" Top="0" Right="800" Bottom="800" />
 				</Properties>
 				<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1" />
 				<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/" />
@@ -119,7 +119,7 @@
 					</Properties>
 					<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
 				</TextWrapPreference>
-				<Link Self="u18a" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:/Users/Brain/Desktop/_89716241_thinkstockphotos-523060154.jpg" LinkResourceFormat="$ID/JPEG" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 131913167214641424 30168" LinkImportModificationTime="2019-01-07T12:08:41" LinkImportTime="2019-02-23T13:07:08" LinkResourceSize="0~75d8" RenditionData="Actual" />
+				<Link Self="u191" AssetURL="$ID/" AssetID="$ID/" LinkResourceURI="file:/Users/Brain/Desktop/men1.jpg" LinkResourceFormat="$ID/JPEG" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 131939936592172592 94519" LinkImportModificationTime="2019-02-07T11:44:19" LinkImportTime="2019-02-23T14:45:56" LinkResourceSize="0~17137" RenditionData="Actual" />
 			</Image>
 		</Rectangle>
 	</Spread>

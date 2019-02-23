@@ -8,16 +8,28 @@ import base64
 def get_image_border_radius(attrib):
     return "border-radius:" + attrib["CornerRadius"] +"pt" if attrib.get("CornerRadius") else "border-radius: 0pt"
 
-def get_image_framing(attrib):
+def handle_cover(attrib):
+    return "object-fit: cover;"
+
+def handle_contain(attrib):
     print(attrib)
+    return "object-fit: contain;"
+
+def handle_fill(attrib):
+    return "object-fit: fill;"
+
+def handle_default(attrib):
+    return "object-fit: none;"
+
+def get_image_framing(attrib):
     switcher = {
-        "FillProportionally": "object-fit: cover;",
-        "Proportionally": "object-fit: contain;",
-        "ContentToFrame": "object-fit: fill;",
-        "default": "object-fit: none;"
+        "FillProportionally": handle_cover,
+        "Proportionally": handle_contain,
+        "ContentToFrame": handle_fill,
+        "default": handle_default
     }
 
-    return switcher.get(attrib["FittingOnEmptyFrame"], switcher["default"])
+    return switcher.get(attrib["FittingOnEmptyFrame"], switcher["default"])(attrib)
 
 def get_image_size(properties):
     size = {}
