@@ -50,8 +50,8 @@
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
 							<PathPointType Anchor="-0.5 -0.5" LeftDirection="-0.5 -0.5" RightDirection="-0.5 -0.5" />
-							<PathPointType Anchor="-0.5 206.86000000000004" LeftDirection="-0.5 206.86000000000004" RightDirection="-0.5 206.86000000000004" />
-							<PathPointType Anchor="539.5 206.86000000000004" LeftDirection="539.5 206.86000000000004" RightDirection="539.5 206.86000000000004" />
+							<PathPointType Anchor="-0.5 301.5" LeftDirection="-0.5 301.5" RightDirection="-0.5 301.5" />
+							<PathPointType Anchor="539.5 301.5" LeftDirection="539.5 301.5" RightDirection="539.5 301.5" />
 							<PathPointType Anchor="539.5 -0.5" LeftDirection="539.5 -0.5" RightDirection="539.5 -0.5" />
 						</PathPointArray>
 					</GeometryPathType>
@@ -79,20 +79,20 @@
 				</Properties>
 			</TextWrapPreference>
 		</TextFrame>
-		<Rectangle Self="u18b" ContentType="GraphicType" StoryTitle="$ID/" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub1" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -306 10.875" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+		<Rectangle Self="u18b" ContentType="GraphicType" StoryTitle="$ID/" OverriddenPageItemProps="" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" ItemLayer="ub1" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -142.5 101.125" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 			<Properties>
 				<PathGeometry>
 					<GeometryPathType PathOpen="false">
 						<PathPointArray>
 							<PathPointType Anchor="-247.5 -139.125" LeftDirection="-247.5 -139.125" RightDirection="-247.5 -139.125" />
-							<PathPointType Anchor="-247.5 -39.125" LeftDirection="-247.5 -39.125" RightDirection="-247.5 -39.125" />
-							<PathPointType Anchor="-47.5 -39.125" LeftDirection="-47.5 -39.125" RightDirection="-47.5 -39.125" />
-							<PathPointType Anchor="-47.5 -139.125" LeftDirection="-47.5 -139.125" RightDirection="-47.5 -139.125" />
+							<PathPointType Anchor="-247.5 60.87500000000004" LeftDirection="-247.5 60.87500000000004" RightDirection="-247.5 60.87500000000004" />
+							<PathPointType Anchor="-47.499999999999986 60.87500000000004" LeftDirection="-47.499999999999986 60.87500000000004" RightDirection="-47.499999999999986 60.87500000000004" />
+							<PathPointType Anchor="-47.499999999999986 -139.125" LeftDirection="-47.499999999999986 -139.125" RightDirection="-47.499999999999986 -139.125" />
 						</PathPointArray>
 					</GeometryPathType>
 				</PathGeometry>
 			</Properties>
-			<FrameFittingOption RightCrop="295" BottomCrop="178.25" />
+			<FrameFittingOption FittingOnEmptyFrame="FillProportionally" />
 			<ObjectExportOption AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing" EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault">
 				<Properties>
 					<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
@@ -106,7 +106,7 @@
 				<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
 			</TextWrapPreference>
 			<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
-			<Image Self="u187" Space="$ID/#Links_RGB" ActualPpi="96 96" EffectivePpi="96 96" ImageRenderingIntent="UseColorSettings" OverriddenPageItemProps="" LocalDisplaySetting="Default" ImageTypeName="$ID/JPEG" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="1 0 0 1 -247.5 -139.125" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
+			<Image Self="u187" Space="$ID/#Links_RGB" ActualPpi="96 96" EffectivePpi="134 134" ImageRenderingIntent="UseColorSettings" OverriddenPageItemProps="" LocalDisplaySetting="Default" ImageTypeName="$ID/JPEG" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="0.7187780772686435 0 0 0.7187780772686435 -325.3975741239893 -139.125" Visible="true" Name="$ID/" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="">
 				<Properties>
 					<Profile type="string">$ID/None</Profile>
 					<GraphicBounds Left="0" Top="0" Right="495" Bottom="278.25" />

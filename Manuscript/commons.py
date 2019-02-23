@@ -8,6 +8,17 @@ import base64
 def get_image_border_radius(attrib):
     return "border-radius:" + attrib["CornerRadius"] +"pt" if attrib.get("CornerRadius") else "border-radius: 0pt"
 
+def get_image_framing(attrib):
+    print(attrib)
+    switcher = {
+        "FillProportionally": "object-fit: cover;",
+        "Proportionally": "object-fit: contain;",
+        "ContentToFrame": "object-fit: fill;",
+        "default": "object-fit: none;"
+    }
+
+    return switcher.get(attrib["FittingOnEmptyFrame"], switcher["default"])
+
 def get_image_size(properties):
     size = {}
     width = []
@@ -20,8 +31,8 @@ def get_image_size(properties):
         if not float(points[1]) in height:
             height.append(float(points[1]))
     
-    size["width"] = str(-(width[0] - width[1])) + "pt"
-    size["height"] = str(-(height[0] - height[1])) + "pt"
+    size["width"] = str(-(width[0] - width[1])) + "px"
+    size["height"] = str(-(height[0] - height[1])) + "px"
     
     return size
     
@@ -104,8 +115,8 @@ def get_strike_through(args):
     return "text-decoration: line-through" if args else None
 
 
-def process_image(url, style):
+def process_image(url, outer, inner):
     url = unquote(url).split(":")
     with open(url[1], "rb") as f:
         b = base64.b64encode(f.read())
-    return "<span style='display: block'><img style='" + style + "' src='data:image/png;base64," + str(b).split("'")[1] + "'/></span>"
+    return "<span style='" + outer + "'><img style='"+ inner +"' src='data:image/png;base64," + str(b).split("'")[1] + "'/></span>"

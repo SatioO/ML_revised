@@ -18,19 +18,24 @@ def process_spreads(args, package):
                     output += process_story(args, story, package)
 
             if(iterator.tag == "Rectangle"):
-                style = "display: inline-block;"
+                outerStyle = "display: inline-block;"
+                innerStyle = "width: 100%; height: 100%;"
+
                 border_radius = commons.get_image_border_radius(iterator.attrib)
-                style += border_radius + ";"
+                outerStyle += border_radius + ";"
                 for properties in iterator.iter():
                     if properties.tag == "PathGeometry":
                         size = commons.get_image_size(properties)
-                        style += "width:" + size["width"] +";height=" + size["height"] +";"
+                        outerStyle += "width:" + size["width"] +";height:" + size["height"] +";"
+                    if properties.tag == "FrameFittingOption":
+                        frame = commons.get_image_framing(properties.attrib)
+                        innerStyle += frame
                         
                     if properties.tag == "Link":
                         for link in properties.iter():
                             if link.tag == "Link":
                                 imageUrl = commons.process_image(
-                                    link.attrib.get("LinkResourceURI"), style)
+                                    link.attrib.get("LinkResourceURI"), outerStyle, innerStyle)
                                 output += imageUrl
 
     return output
