@@ -227,7 +227,7 @@
 			<SlugGuideColor type="enumeration">GridBlue</SlugGuideColor>
 		</Properties>
 	</PasteboardPreference>
-	<ViewPreference ShowNotes="true" GuideSnaptoZone="4" CursorKeyIncrement="1" HorizontalMeasurementUnits="Inches" VerticalMeasurementUnits="Inches" RulerOrigin="SpreadOrigin" ShowRulers="true" ShowFrameEdges="true" LineMeasurementUnits="Points" TypographicMeasurementUnits="Points" TextSizeMeasurementUnits="Points" PrintDialogMeasurementUnits="Inches" StrokeMeasurementUnits="Points" PointsPerInch="72" HorizontalCustomPoints="12" VerticalCustomPoints="12" />
+	<ViewPreference ShowNotes="true" GuideSnaptoZone="4" CursorKeyIncrement="1" HorizontalMeasurementUnits="Points" VerticalMeasurementUnits="Points" RulerOrigin="SpreadOrigin" ShowRulers="true" ShowFrameEdges="true" LineMeasurementUnits="Points" TypographicMeasurementUnits="Points" TextSizeMeasurementUnits="Points" PrintDialogMeasurementUnits="Inches" StrokeMeasurementUnits="Points" PointsPerInch="72" HorizontalCustomPoints="12" VerticalCustomPoints="12" />
 	<TransparencyPreference BlendingSpace="CMYK" GlobalLightAngle="120" GlobalLightAltitude="30" />
 	<TransparencyDefaultContainerObject>
 		<TransparencySetting>

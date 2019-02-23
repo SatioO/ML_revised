@@ -47,15 +47,19 @@ def get_color(color, package, args):
     tree = ET.parse(
         args.extract + package.graphic.name)
 
-    currentColor = "rgb(0, 0, 0)"
-
+    color_str = "rgb(255, 255, 255)"
     for i in tree.getroot().iter("Color"):
         if i.attrib["Self"] == color:
             colorValue = i.attrib["ColorValue"].split(" ")
-            currentColor = "rgb" + str(decode_color.cmyk_to_rgb(
-                float(colorValue[0]), float(colorValue[1]), float(colorValue[2]), float(colorValue[3])))
+            rgb_col = []
+            for x in range(4):
+                if x < len(colorValue):
+                    rgb_col.append(int(colorValue[x]))
+                else:
+                    rgb_col.append(255)
+            color_str = "rgb" + str(decode_color.cmyk_to_rgb(*rgb_col))
 
-    return "color:" + currentColor
+    return "color:" + color_str
 
 
 def get_stroke_color(color, package, args):

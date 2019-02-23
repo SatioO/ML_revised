@@ -9,12 +9,27 @@ def process_spreads(args, package):
         tree = ET.parse(args.extract + spread)
         root = tree.getroot()
 
-        for TextFrame in root.iter("TextFrame"):
-            story = TextFrame.attrib["ParentStory"]
-            story = "Stories/Story_" + story + ".xml"
+        for iterator in root.iter():
+            if(iterator.tag == "TextFrame"):
+                story = iterator.attrib["ParentStory"]
+                story = "Stories/Story_" + story + ".xml"
 
-            if story in package.stories:
-                output += process_story(args, story, package)
+                if story in package.stories:
+                    output += process_story(args, story, package)
+            
+            if(iterator.tag == "Rectangle"):
+                for properties in iterator.iter():
+                    if properties.tag == "PathPointArray":
+                        print(properties)
+                        
+                    if properties.tag == "Link":
+                        for link in properties.iter():
+                            if link.tag == "Link":
+                                imageUrl = commons.process_image(
+                                    link.attrib.get("LinkResourceURI"))
+                                output += imageUrl
+
+
 
     return output
 
