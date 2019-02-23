@@ -9,38 +9,41 @@ def get_image_position(attrib, iterator):
     style = ""
     container = {}
 
-    for properties in iterator.iter():
-        if properties.tag == "PathGeometry":
-            size, container_width, container_height = get_image_container_size(properties)
+    if attrib.get("TopCrop") or attrib.get("LeftCrop"):
+        for properties in iterator.iter():
+            if properties.tag == "PathGeometry":
+                size, container_width, container_height = get_image_container_size(properties)
 
-        if properties.tag == "Image":
-            transformation = get_image_transformation(properties.attrib)
-            
-            for item in properties.iter():
-                if item.tag == "GraphicBounds":
-                   container["width"] = float(item.attrib["Bottom"])
-                   container["height"] =  float(item.attrib["Right"])
+            if properties.tag == "Image":
+                transformation = get_image_transformation(properties.attrib)
+                
+                for item in properties.iter():
+                    if item.tag == "GraphicBounds":
+                        container["width"] = float(item.attrib["Bottom"])
+                        container["height"] =  float(item.attrib["Right"])
 
-    style += "object-position: "     
-    style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
-    style += str(float(transformation[5]) - container_height[0]) + "pt;"
-    
-    style +="width: " + str(float(transformation[0]) * container["width"]) + "pt;"
-    style += "height: " + str(float(transformation[3]) * container["height"]) + "pt;"
-    
+        style += "object-position: "     
+        style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
+        style += str(float(transformation[5]) - container_height[0]) + "pt;"
+        
+        style +="width: 100%;"
+        style += "height: " + str(float(transformation[3]) * container["height"]) + "pt;"
+    else:
+        style="width: 100%; height: 100%;"
+
     return style
 
 def get_image_border_radius(attrib):
     return "border-radius:" + attrib["CornerRadius"] +"pt;" if attrib.get("CornerRadius") and attrib.get("TopLeftCornerOption") == "RoundedCorner" else "border-radius: 0pt;"
 
 def handle_cover(attrib, iterator):
-    return get_image_position(attrib, iterator)
+    return "object-fit: cover;" + get_image_position(attrib, iterator)
 
 def handle_contain(attrib, iterator):
-    return get_image_position(attrib, iterator)
+    return "object-fit: contain;" + get_image_position(attrib, iterator)
 
 def handle_fill(attrib, iterator):
-    return "object-fit: fill;"
+    return "object-fit: fill;" + get_image_position(attrib, iterator)
 
 def handle_default(attrib, iterator):
     return "object-fit: none;"
