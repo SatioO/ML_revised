@@ -1,6 +1,23 @@
 import xml.etree.ElementTree as ET
 import commons
 
+def get_transformations(root, page):
+    for iterator in root.iter():
+        if(iterator.tag == "TextFrame"):
+            transformations = [float(i) for i in iterator.get("ItemTransform").split(" ")]
+            print(transformations)
+            
+def setup_page(root):
+    page = {}
+    
+    for iterator in root.iter():
+        if iterator.tag == "Page":
+            dimensions = [float(i) for i in iterator.get("GeometricBounds").split(" ")]
+            page["width"] = dimensions[3]
+            page["height"] = dimensions[2]
+    
+    return page
+        
 
 def process_spreads(args, package):
     output = ""
@@ -9,9 +26,12 @@ def process_spreads(args, package):
         tree = ET.parse(args.extract + spread)
         root = tree.getroot()
         
+        page = setup_page(root)
+        get_transformations(root, page)
+
         for iterator in root.iter():
             if(iterator.tag == "TextFrame"):
-                story = iterator.attrib["ParentStory"]
+                story = iterator.get("ParentStory")
                 story = "Stories/Story_" + story + ".xml"
 
                 if story in package.stories:

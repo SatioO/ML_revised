@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="14.0">
+	<Story Self="ufa" UserText="true" IsEndnoteStory="false" AppliedTOCStyle="n" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Content>One of the most distinctive aspects of Flutter is its aggressive composability. Widgets are built by composing other widgets, which are themselves built out of progressively more basic widgets. For example, Padding is a widget rather than a property of other widgets. As a result, user interfaces built with Flutter consist of many, many widgets.</Content>
+				<Br />
+				<Br />
+				<Content>The widget building recursion bottoms out in RenderObjectWidgets, which are widgets that create nodes in the underlying render tree. The render tree is a data structure that stores the geometry of the user interface, which is computed during layout and used during painting and hit testing. Most Flutter developers do not author render objects directly but instead manipulate the render tree using widgets.</Content>
+				<Br />
+				<Br />
+				<Content>In order to support aggressive composability at the widget layer, Flutter uses a number of efficient algorithms and optimizations at both the widget and render tree layers, which are described in the following subsections.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

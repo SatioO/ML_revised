@@ -9,27 +9,30 @@ def get_image_position(attrib, iterator):
     style = ""
     container = {}
 
+    for properties in iterator.iter():
+        if properties.tag == "PathGeometry":
+            size, container_width, container_height = get_image_container_size(properties)
+
+        if properties.tag == "Image":
+            transformation = get_image_transformation(properties.attrib)
+            
+            for item in properties.iter():
+                if item.tag == "GraphicBounds":
+                    container["width"] = float(item.attrib["Bottom"])
+                    container["height"] =  float(item.attrib["Right"])
+
+    style += "object-position: "     
+    style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
+    style += str(float(transformation[5]) - container_height[0]) + "pt;"
+    
     if attrib.get("TopCrop") or attrib.get("LeftCrop"):
-        for properties in iterator.iter():
-            if properties.tag == "PathGeometry":
-                size, container_width, container_height = get_image_container_size(properties)
-
-            if properties.tag == "Image":
-                transformation = get_image_transformation(properties.attrib)
-                
-                for item in properties.iter():
-                    if item.tag == "GraphicBounds":
-                        container["width"] = float(item.attrib["Bottom"])
-                        container["height"] =  float(item.attrib["Right"])
-
-        style += "object-position: "     
-        style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
-        style += str(float(transformation[5]) - container_height[0]) + "pt;"
-        
         style +="width: 100%;"
         style += "height: " + str(float(transformation[3]) * container["height"]) + "pt;"
     else:
         style="width: 100%; height: 100%;"
+        style += "object-position: " 
+        style += str(float(transformation[4]) - container_width[0]) + "pt" + " "
+        style += str(float(transformation[5]) - container_height[0]) + "pt;"
 
     return style
 
